@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b35">
+  <meta name="description" content="Flappy Penguin - A fun Arctic flying adventure game.">
+  <title>Flappy Penguin | Arctic Adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="game-page">
+    <header class="topbar">
+      <a href="#" class="brand">
+        <span class="brand-icon">🐧</span>
+        <span>FLAPPY<span class="brand-accent">PENGUIN</span></span>
+      </a>
+      <div class="top-label">ARCTIC ADVENTURE</div>
+    </header>
+
+    <section class="game-section">
+      <div class="intro">
+        <span class="eyebrow">A LITTLE WING, A BIG ADVENTURE</span>
+        <h1>Help Pip <span>fly!</span></h1>
+        <p>Tap, click or press SPACE to flap through the icy obstacles.</p>
+      </div>
+
+      <div class="game-shell">
+        <div class="game-hud">
+          <div class="hud-item">
+            <span class="hud-label">SCORE</span>
+            <strong id="score">0</strong>
+          </div>
+          <div class="hud-item best-score">
+            <span class="hud-label">BEST</span>
+            <strong id="best">0</strong>
+          </div>
+          <button id="soundButton" class="sound-button" aria-label="Toggle sound">
+            <span id="soundIcon">🔊</span>
+          </button>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="gameCanvas" width="480" height="640"
+            aria-label="Flappy Penguin game. Press space or tap to fly.">
+          </canvas>
+
+          <div class="game-overlay" id="gameOverlay">
+            <div class="overlay-card">
+              <div class="penguin-emoji" id="overlayPenguin">🐧</div>
+              <span class="overlay-kicker" id="overlayKicker">WELCOME TO THE ARCTIC</span>
+              <h2 id="overlayTitle">Flappy Penguin</h2>
+              <p id="overlayText">Help Pip dodge the ice pillars and fly as far as possible!</p>
+              <button id="startButton" class="primary-button">START FLYING <span>➜</span></button>
+              <div class="controls-hint">SPACE · CLICK · TAP</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="game-footer">
+          <span>❄️ STAY COOL. KEEP FLYING.</span>
+          <span id="gameStatus">READY TO PLAY</span>
+        </div>
+      </div>
+
+      <div class="instructions">
+        <div class="instruction">
+          <span class="instruction-icon">⌨️</span>
+          <div><strong>SPACE</strong><small>Flap your wings</small></div>
+        </div>
+        <div class="instruction">
+          <span class="instruction-icon">🖱️</span>
+          <div><strong>CLICK / TAP</strong><small>Fly upward</small></div>
+        </div>
+        <div class="instruction">
+          <span class="instruction-icon">🏆</span>
+          <div><strong>BEAT YOUR BEST</strong><small>Set a new record</small></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>Made with ❄️ and JavaScript · Flappy Penguin © 2026</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
